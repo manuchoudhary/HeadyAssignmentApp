@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by manish on 01/12/17.
@@ -21,6 +22,8 @@ public class Product implements Serializable {
     private String taxName;
     @Expose
     private double taxValue;
+    @Expose
+    private List<Product> elements;
 
     public int getProductID() {
         return productID;
@@ -60,5 +63,13 @@ public class Product implements Serializable {
 
     public void setTaxValue(double taxValue) {
         this.taxValue = taxValue;
+    }
+
+    public List<Product> getElements() {
+        return elements;
+    }
+
+    public void setElements(List<Product> elements) {
+        this.elements = elements;
     }
 }
