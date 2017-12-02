@@ -1,4 +1,4 @@
-package headyassignmentapp.app.io.headyassignmentapp.applications.builder;
+package headyassignmentapp.app.io.headyassignmentapp.screens.main.dagger;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -11,5 +11,5 @@ import javax.inject.Scope;
 
 @Scope
 @Retention(RetentionPolicy.CLASS)
-@interface AppScope {
+public @interface MainScope {
 }

@@ -8,13 +8,13 @@ import timber.log.BuildConfig;
 import timber.log.Timber;
 import headyassignmentapp.app.io.headyassignmentapp.applications.builder.AppComponent;
 import headyassignmentapp.app.io.headyassignmentapp.applications.builder.AppContextModule;
+import headyassignmentapp.app.io.headyassignmentapp.applications.builder.DaggerAppComponent;
 
 /**
  * Created by manish on 01/12/17.
  */
 
 public class AppController extends Application {
-
 
     private static AppComponent appComponent;
 
