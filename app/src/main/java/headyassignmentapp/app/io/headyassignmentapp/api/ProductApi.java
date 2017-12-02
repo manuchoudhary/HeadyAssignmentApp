@@ -10,6 +10,6 @@ import rx.Observable;
 
 public interface ProductApi {
 
-    @GET("test-mobile/iOS/json/test2.json")
+    @GET("json")
     Observable<Category> getCategory();
 }

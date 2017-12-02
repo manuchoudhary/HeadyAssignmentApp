@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public class CategoryApiServiceModule {
 
-    private static final String BASE_URL = "http://coemygroup.fr/";
+    private static final String BASE_URL = "https://stark-spire-93433.herokuapp.com/";
     @AppScope
     @Provides
     ProductApi provideApiService(OkHttpClient client, GsonConverterFactory gson, RxJavaCallAdapterFactory rxAdapter)
