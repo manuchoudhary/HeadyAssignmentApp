@@ -32,7 +32,7 @@ public class CategoryPresenter {
     public void onCreate() {
 
         Log.d("enter to presenter", "oki");
-        subscriptions.add(getHeroesList());
+        subscriptions.add(getCategoryList());
         subscriptions.add(respondToClick());
     }
 
@@ -47,7 +47,7 @@ public class CategoryPresenter {
     }
 
 
-    private Subscription getHeroesList() {
+    private Subscription getCategoryList() {
 
         return model.isNetworkAvailable().doOnNext(networkAvailable -> {
             if (!networkAvailable) {

@@ -12,5 +12,5 @@ import headyassignmentapp.app.io.headyassignmentapp.screens.category.CategoryLis
 @Component(dependencies = {AppComponent.class} , modules = {CategoryModule.class})
 public interface CategoryComponent {
 
-    void inject (CategoryListActivity heroesActivity);
+    void inject (CategoryListActivity categoryListActivity);
 }
