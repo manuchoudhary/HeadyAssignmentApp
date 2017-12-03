@@ -1,5 +1,6 @@
 package headyassignmentapp.app.io.headyassignmentapp.api;
 
+import headyassignmentapp.app.io.headyassignmentapp.models.Categories;
 import headyassignmentapp.app.io.headyassignmentapp.models.Category;
 import retrofit2.http.GET;
 import rx.Observable;
@@ -11,5 +12,5 @@ import rx.Observable;
 public interface ProductApi {
 
     @GET("json")
-    Observable<Category> getCategory();
+    Observable<Categories> getCategory();
 }

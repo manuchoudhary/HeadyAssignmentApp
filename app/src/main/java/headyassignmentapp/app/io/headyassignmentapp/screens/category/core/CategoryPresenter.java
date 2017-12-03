@@ -59,10 +59,11 @@ public class CategoryPresenter {
                 filter(isNetworkAvailable -> true).
                 flatMap(isAvailable -> model.provideListCategory()).
                 subscribeOn(rxSchedulers.internet()).
-                observeOn(rxSchedulers.androidThread()).subscribe(category -> {
+                observeOn(rxSchedulers.androidThread()).subscribe(categories -> {
                     Log.d("ok loaded", "cccc");
-                    view.swapAdapter((ArrayList<Category>) category.getElements());
-                    categories = (ArrayList<Category>) category.getElements();
+                    view.swapAdapter(categories.getCategories());
+                    CategoryPresenter.this.categories.clear();
+                    CategoryPresenter.this.categories.addAll(categories.getCategories());
                 }, throwable -> {
                     UiUtils.handleThrowable(throwable);
                 }

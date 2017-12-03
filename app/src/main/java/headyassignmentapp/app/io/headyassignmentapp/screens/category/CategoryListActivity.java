@@ -10,7 +10,6 @@ import javax.inject.Inject;
 
 import headyassignmentapp.app.io.headyassignmentapp.applications.AppController;
 import headyassignmentapp.app.io.headyassignmentapp.models.Category;
-import headyassignmentapp.app.io.headyassignmentapp.models.Product;
 import headyassignmentapp.app.io.headyassignmentapp.screens.category.core.CategoryPresenter;
 import headyassignmentapp.app.io.headyassignmentapp.screens.category.core.CategoryView;
 import headyassignmentapp.app.io.headyassignmentapp.screens.category.dagger.CategoryModule;
@@ -32,7 +31,6 @@ public class CategoryListActivity extends AppCompatActivity {
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         DaggerCategoryComponent.builder().appComponent(AppController.getNetComponent()).categoryModule(new CategoryModule(this)).build().inject(this);
         setContentView(view.view());
         presenter.onCreate();

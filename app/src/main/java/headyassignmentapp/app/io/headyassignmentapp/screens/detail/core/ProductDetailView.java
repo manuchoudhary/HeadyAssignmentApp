@@ -38,7 +38,6 @@ public class ProductDetailView {
         ButterKnife.bind(this,view);
 
         productName.setText(TextUtils.isEmpty(product.getProductName()) ? "no name" : product.getProductName());
-        productTaxName.setText(TextUtils.isEmpty(product.getTaxName()) ? "no tax name" : product.getTaxName());
 
     }
 

@@ -13,32 +13,28 @@ import java.util.List;
 public class Product implements Serializable {
 
     @Expose
-    private int productID;
+    private int id;
     @Expose
-    private String productName;
+    private String name;
     @Expose
     private ArrayList<Variant> variants;
-    @Expose
-    private String taxName;
-    @Expose
-    private double taxValue;
     @Expose
     private List<Product> elements;
 
     public int getProductID() {
-        return productID;
+        return id;
     }
 
-    public void setProductID(int productID) {
-        this.productID = productID;
+    public void setProductID(int id) {
+        this.id = id;
     }
 
     public String getProductName() {
-        return productName;
+        return name;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public void setProductName(String name) {
+        this.name = name;
     }
 
     public ArrayList<Variant> getVariants() {
@@ -47,22 +43,6 @@ public class Product implements Serializable {
 
     public void setVariants(ArrayList<Variant> variants) {
         this.variants = variants;
-    }
-
-    public String getTaxName() {
-        return taxName;
-    }
-
-    public void setTaxName(String taxName) {
-        this.taxName = taxName;
-    }
-
-    public double getTaxValue() {
-        return taxValue;
-    }
-
-    public void setTaxValue(double taxValue) {
-        this.taxValue = taxValue;
     }
 
     public List<Product> getElements() {

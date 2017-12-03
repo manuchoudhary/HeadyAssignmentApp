@@ -1,6 +1,7 @@
 package headyassignmentapp.app.io.headyassignmentapp.screens.category.core;
 
 import headyassignmentapp.app.io.headyassignmentapp.api.ProductApi;
+import headyassignmentapp.app.io.headyassignmentapp.models.Categories;
 import headyassignmentapp.app.io.headyassignmentapp.models.Category;
 import headyassignmentapp.app.io.headyassignmentapp.models.Product;
 import headyassignmentapp.app.io.headyassignmentapp.screens.category.CategoryListActivity;
@@ -22,7 +23,7 @@ public class CategoryModel {
     }
 
 
-    Observable<Category> provideListCategory() {
+    Observable<Categories> provideListCategory() {
         return api.getCategory();
     }
 

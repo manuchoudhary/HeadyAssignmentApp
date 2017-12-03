@@ -13,28 +13,28 @@ import java.util.List;
 public class Category implements Serializable {
 
     @Expose
-    private int categoryID;
+    private int id;
     @Expose
-    private String categoryName;
+    private String name;
     @Expose
     private ArrayList<Product> products;
     @Expose
     private List<Category> elements;
 
     public int getCategoryID() {
-        return categoryID;
+        return id;
     }
 
-    public void setCategoryID(int categoryID) {
-        this.categoryID = categoryID;
+    public void setCategoryID(int id) {
+        this.id = id;
     }
 
     public String getCategoryName() {
-        return categoryName;
+        return name;
     }
 
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
+    public void setCategoryName(String name) {
+        this.name = name;
     }
 
     public ArrayList<Product> getProducts() {
