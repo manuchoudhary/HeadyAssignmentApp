@@ -48,7 +48,7 @@ public class CategoryListActivity extends AppCompatActivity {
     public void goToProductListActivity(Category category) {
 
         Intent in = new Intent(this, ProductListActivity.class);
-        in.putExtra("hero", (Serializable) category);
+        in.putExtra("category", (Serializable) category);
         startActivity(in);
 
     }

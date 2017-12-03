@@ -41,8 +41,6 @@ public class CategoryView {
         list.setAdapter(adapter);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context);
         list.setLayoutManager(mLayoutManager);
-
-
     }
 
     public Observable<Integer> itemClicks()
@@ -54,8 +52,7 @@ public class CategoryView {
         return view;
     }
 
-    public void swapAdapter(ArrayList<Category> category)
-    {
+    public void swapAdapter(ArrayList<Category> category) {
         adapter.swapAdapter(category);
     }
 }

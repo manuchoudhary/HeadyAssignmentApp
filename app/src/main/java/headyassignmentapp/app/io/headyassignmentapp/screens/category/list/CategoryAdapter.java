@@ -22,8 +22,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
     ArrayList<Category> listCategory = new ArrayList<>();
 
 
-    public void swapAdapter(ArrayList<Category> category)
-    {
+    public void swapAdapter(ArrayList<Category> category) {
         this.listCategory.clear();
         this.listCategory.addAll(category);
         notifyDataSetChanged();
