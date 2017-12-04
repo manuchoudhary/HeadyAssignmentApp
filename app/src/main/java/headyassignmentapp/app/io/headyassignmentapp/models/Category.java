@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by shirishtulsian on 01/12/17.
+ * Created by manish on 01/12/17.
  */
 
 public class Category implements Serializable {
