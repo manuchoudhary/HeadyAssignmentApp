@@ -38,7 +38,7 @@ public class CategoryView {
         ButterKnife.bind(this, view);
 
         adapter = new CategoryAdapter();
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(context, 3);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(context, 2);
         list.setAdapter(adapter);
         list.setLayoutManager(mLayoutManager);
     }

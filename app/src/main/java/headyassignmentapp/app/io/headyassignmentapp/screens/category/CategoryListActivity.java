@@ -3,6 +3,7 @@ package headyassignmentapp.app.io.headyassignmentapp.screens.category;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import java.io.Serializable;
 
@@ -47,7 +48,10 @@ public class CategoryListActivity extends AppCompatActivity {
 
         Intent in = new Intent(this, ProductListActivity.class);
         in.putExtra("category", (Serializable) category);
-        startActivity(in);
-
+        if(category.getProducts().size() == 0){
+            Toast.makeText(this, "No Products", Toast.LENGTH_LONG).show();
+        }else {
+            startActivity(in);
+        }
     }
 }
