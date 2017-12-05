@@ -11,43 +11,43 @@ import java.io.Serializable;
 public class Variant implements Serializable {
 
     @Expose
-    private int variantID;
+    private int id;
     @Expose
-    private String variantColor;
+    private String color;
     @Expose
-    private int variantSize;
+    private int size;
     @Expose
-    private double variantPrice;
+    private double price;
 
-    public int getVariantID() {
-        return variantID;
+    public int getId() {
+        return id;
     }
 
-    public void setVariantID(int variantID) {
-        this.variantID = variantID;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getVariantColor() {
-        return variantColor;
+    public String getColor() {
+        return color;
     }
 
-    public void setVariantColor(String variantColor) {
-        this.variantColor = variantColor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public int getVariantSize() {
-        return variantSize;
+    public int getSize() {
+        return size;
     }
 
-    public void setVariantSize(int variantSize) {
-        this.variantSize = variantSize;
+    public void setSize(int size) {
+        this.size = size;
     }
 
-    public double getVariantPrice() {
-        return variantPrice;
+    public double getPrice() {
+        return price;
     }
 
-    public void setVariantPrice(double variantPrice) {
-        this.variantPrice = variantPrice;
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
