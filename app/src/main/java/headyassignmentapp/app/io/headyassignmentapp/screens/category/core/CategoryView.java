@@ -1,5 +1,6 @@
 package headyassignmentapp.app.io.headyassignmentapp.screens.category.core;
 
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -37,7 +38,7 @@ public class CategoryView {
         ButterKnife.bind(this, view);
 
         adapter = new CategoryAdapter();
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(context, 3);
         list.setAdapter(adapter);
         list.setLayoutManager(mLayoutManager);
     }
